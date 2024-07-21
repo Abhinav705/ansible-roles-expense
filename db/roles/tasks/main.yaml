@@ -1,3 +1,4 @@
+tasks:
 - name: Installing mysql-server
     ansible.builtin.dnf:
       name: mysql-server
