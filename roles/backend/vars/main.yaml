@@ -1,0 +1,6 @@
+mysql_password: ExpenseApp@1
+login_host: 172.31.81.226
+DB_HOST: 172.31.81.226
+login_user: root
+app_location: /app
+component: backend
