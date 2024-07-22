@@ -10,6 +10,8 @@
     enabled: yes
 
 - name: Run pre-requisties
+  tags:
+  - deployment
   ansible.builtin.import_role:
     name: common
     tasks_from: app-pre-req
@@ -19,7 +21,7 @@
     src: expense.conf.j2
     dest: /etc/nginx/default.d/expense.conf
   notify:
-    restart nginx
+  - restart nginx
 
 # - name: restart nginx
 #   ansible.builtin.service:
